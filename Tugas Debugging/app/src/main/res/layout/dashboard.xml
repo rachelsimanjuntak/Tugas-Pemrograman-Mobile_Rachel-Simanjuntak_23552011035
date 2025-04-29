@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/dashboard"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fafafa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg"
+        android:padding="20dp"
+        android:gravity="bottom">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/idperson"
+            android:layout_gravity="right"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:textColor="#fafafa"
+                android:textSize="30sp"
+                android:fontFamily="@font/abel"/>
+
+            <TextView
+                android:id="@+id/idwelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assalamualaikum"
+                android:textColor="#fafafa"
+                android:textSize="25sp"
+                android:fontFamily="@font/abel"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="225dp"
+                    android:layout_height="94dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/iduser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Information"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#00BBFF"
+                    android:fontFamily="@font/abel"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:id="@+id/idemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:drawableStart="@drawable/iconemail"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:text="Email Address"
+                    android:fontFamily="@font/abel" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BDBDBD" />
+
+                <TextView
+                    android:id="@+id/idpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:drawableStart="@drawable/iconpass"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:text="Password: ********"
+                    android:fontFamily="@font/abel"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BDBDBD" />
+
+                <TextView
+                    android:id="@+id/idgender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:drawableStart="@drawable/icongender"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:text="Gender: Male"
+                    android:fontFamily="@font/abel"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BDBDBD" />
+
+                <TextView
+                    android:id="@+id/idbirthdatePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:drawableStart="@drawable/icondate"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:text="Birth Date: 01/01/1990"
+                    android:fontFamily="@font/abel"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BDBDBD" />
+
+                <TextView
+                    android:id="@+id/idaddressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:drawableStart="@drawable/iconaddr"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Address: Your Address Here"
+                    android:fontFamily="@font/abel"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BDBDBD" />
+
+                <TextView
+                    android:id="@+id/idShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:drawableTop="@drawable/share"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Share"
+                    android:fontFamily="@font/abel"/>
+                <Button
+                    android:id="@+id/btnShowProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:text="Show Profile"
+                    android:backgroundTint="#00BBFF"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/abel"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="@drawable/lowerbg"
+        android:gravity="bottom"/>
+
+</LinearLayout>
